@@ -1,3 +1,11 @@
+# 参考：
+
+https://github.com/gwt9502/gwt9502.io/blob/main/contentlayer.config.ts
+
+https://www.199406.xyz/blog/use-nextjs-create-blog
+
+# 介绍
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
