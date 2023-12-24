@@ -1,6 +1,5 @@
 import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
-import { useMDXComponent } from "next-contentlayer/hooks";
 import { BlogCardHeader } from "@/app/components/blog-card";
 import { Mdx } from "@/app/components/mdx";
 import { Metadata } from "next";
