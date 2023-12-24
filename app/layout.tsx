@@ -5,6 +5,7 @@ import clsx from "clsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// Static metadata
 export const metadata: Metadata = {
   title: { default: "Capybara Blog", template: "%s | Capybara Blog" },
   description: "Generated for All Capybaras in the World",
