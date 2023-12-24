@@ -1,8 +1,15 @@
+import clsx from "clsx";
 import { useMDXComponent } from "next-contentlayer/hooks";
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 
-const components = {
-  Image,
+const components: any = {
+  Image: (props: ImageProps) => (
+    <Image
+      {...props}
+      alt={props.src.toString()}
+      className={clsx(props.className, "rounded-lg")}
+    />
+  ),
 };
 
 type MdxProps = {
@@ -11,5 +18,9 @@ type MdxProps = {
 
 export function Mdx({ code }: MdxProps) {
   const Component = useMDXComponent(code);
-  return <Component />;
+  return (
+    <article>
+      <Component components={components} />
+    </article>
+  );
 }
