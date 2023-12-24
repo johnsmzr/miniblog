@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "clsx": "^2.0.0",
     "contentlayer": "^0.3.4",
     "next": "14.0.4",
     "next-contentlayer": "^0.3.4",
