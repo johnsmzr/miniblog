@@ -1,26 +1,25 @@
-import { allBlogs } from 'contentlayer/generated'
-import { notFound } from 'next/navigation'
-import { useMDXComponent } from 'next-contentlayer/hooks'
-import { BlogCardHeader } from '@/app/components/blog-card'
- 
+import { allBlogs } from "contentlayer/generated";
+import { notFound } from "next/navigation";
+import { useMDXComponent } from "next-contentlayer/hooks";
+import { BlogCardHeader } from "@/app/components/blog-card";
+import { Mdx } from "@/app/components/mdx";
+
 type BlogSlugProps = {
   params: {
-    slug: string
-  }
-}
+    slug: string;
+  };
+};
 
 export default function BlogSlug({ params }: BlogSlugProps) {
-  const post = allBlogs.find((post) => post.slug === params.slug)
+  const post = allBlogs.find((post) => post.slug === params.slug);
   if (!post) {
-    notFound()
+    notFound();
   }
- 
-  const Component = useMDXComponent(post.body.code)
- 
+
   return (
     <section className="prose prose-stone">
       <BlogCardHeader {...post} />
-      <Component />
+      <Mdx code={post.body.code} />
     </section>
-  )
+  );
 }
