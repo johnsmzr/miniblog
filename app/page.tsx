@@ -1,25 +1,19 @@
-import { allBlogs } from 'contentlayer/generated'
-import Link from 'next/link'
- 
+import { allBlogs } from "contentlayer/generated";
+import { BlogCard } from "./components/blog-card";
+
 export default function Home() {
   return (
     <section>
       {allBlogs
         .sort((a, b) => {
           if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
-            return -1
+            return -1;
           }
-          return 1
+          return 1;
         })
         .map((item) => (
-          <Link
-            key={item.slug}
-            href={`/blog/${item.slug}`}
-            className='mb-5'
-          >
-            {item.title}
-          </Link>
+          <BlogCard key={item._id} {...item} />
         ))}
     </section>
-  )
+  );
 }
