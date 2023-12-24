@@ -1,6 +1,7 @@
 import { allBlogs } from 'contentlayer/generated'
 import { notFound } from 'next/navigation'
 import { useMDXComponent } from 'next-contentlayer/hooks'
+import { BlogCardHeader } from '@/app/components/blog-card'
  
 type BlogSlugProps = {
   params: {
@@ -18,6 +19,7 @@ export default function BlogSlug({ params }: BlogSlugProps) {
  
   return (
     <section className="prose prose-stone">
+      <BlogCardHeader {...post} />
       <Component />
     </section>
   )
