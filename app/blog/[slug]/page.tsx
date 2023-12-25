@@ -38,7 +38,8 @@ export default function BlogSlug({ params }: BlogSlugProps) {
   }
 
   return (
-    <section className="prose prose-stone">
+    // <section className="prose prose-stone">
+    <section className="py-6 prose dark:prose-invert">
       <BlogCardHeader {...post} />
       <Mdx code={post.body.code} />
     </section>
