@@ -3,6 +3,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { useWindowScroll } from "react-use";
+import SwitchTheme from "./switch-theme";
 
 const navItems = [
   { children: "Category", href: "/category" },
@@ -16,7 +17,7 @@ export default function Topbar() {
     <nav
       className={clsx(
         "sticky top-0 z-50 h-16",
-        y >= 0 && "bg-white dark:bg-neutral-900 shadow-md"
+        y > 0 && "bg-white dark:bg-neutral-900 shadow-md"
       )}
     >
       <div
@@ -51,6 +52,8 @@ export default function Topbar() {
               {...navItems}
             />
           ))}
+          {/* change light/dark theme */}
+          <SwitchTheme />
         </div>
       </div>
     </nav>
