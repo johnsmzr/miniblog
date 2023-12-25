@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import { useTheme } from 'next-themes'
-import Image from 'next/image'
+import { useTheme } from "next-themes";
+import Image from "next/image";
 
 export default function SwitchTheme() {
-  const { theme, setTheme } = useTheme()
-  const nextTheme = theme === 'dark' ? 'light' : 'dark'
+  const { theme, setTheme } = useTheme();
+  const nextTheme = theme === "dark" ? "light" : "dark";
   return (
     <button onClick={() => setTheme(nextTheme)}>
       <Image
@@ -15,5 +15,5 @@ export default function SwitchTheme() {
         height={23}
       />
     </button>
-  )
+  );
 }

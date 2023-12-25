@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
 import Topbar from "./components/topbar";
+import ThemeProvider from "./components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,16 +21,18 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" className="scroll-smooth">
       <body className={inter.className}>
-        <Topbar />
-        <main
-          className={clsx(
-            "md:max-w-4xl mt-5 m-auto pb-12 px-5 md:px-0",
-            "min-h-[calc(100%-4rem)]",
-            "box-border"
-          )}
-        >
-          {children}
-        </main>
+        <ThemeProvider>
+          <Topbar />
+          <main
+            className={clsx(
+              "md:max-w-4xl mt-5 m-auto pb-12 px-5 md:px-0",
+              "min-h-[calc(100%-4rem)]",
+              "box-border"
+            )}
+          >
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
