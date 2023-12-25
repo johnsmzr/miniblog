@@ -45,6 +45,7 @@ export default function Topbar() {
         >
           {navItems.map((navItems) => (
             <Link
+              key={navItems.href}
               className={clsx(
                 "mr-10",
                 "border-b-2 border-transparent hover:border-current"
