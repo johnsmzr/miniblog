@@ -1,14 +1,37 @@
+# To Do 规划
+
+- <input type="checkbox" > 增加文章分类目录
+- <input type="checkbox" > 增加搜索功能
+- <input type="checkbox" > 增加评论功能
+- <input type="checkbox" > 增加登陆功能
+
+<!-- - <input type="checkbox" checked > 已完成的任务 -->
+
 # 参考：
 
 https://github.com/gwt9502/gwt9502.io/blob/main/contentlayer.config.ts
 
 https://www.199406.xyz/blog/use-nextjs-create-blog
 
+---
+
+https://github.com/timlrx/tailwind-nextjs-starter-blog
+
+https://tailwind-nextjs-starter-blog.vercel.app/blog
+
+---
+
+https://github.com/leerob/leerob.io
+
+https://leerob.io/blog
+
 # 介绍
+
+尽量制作一个**精简**的博客，最小化是原则。
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Getting Started 如何使用
 
 First, run the development server:
 
