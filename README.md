@@ -5,13 +5,6 @@
 - [ ] 增加评论功能
 - [ ] 增加登陆功能
 
-- <input type="checkbox" > 增加文章分类目录
-- <input type="checkbox" > 增加搜索功能
-- <input type="checkbox" > 增加评论功能
-- <input type="checkbox" > 增加登陆功能
-
-<!-- - <input type="checkbox" checked > 已完成的任务 -->
-
 # 参考：
 
 https://github.com/gwt9502/gwt9502.io/blob/main/contentlayer.config.ts
