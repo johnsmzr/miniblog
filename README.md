@@ -1,5 +1,10 @@
 # To Do 规划
 
+- [ ] 增加文章分类目录
+- [ ] 增加搜索功能
+- [ ] 增加评论功能
+- [ ] 增加登陆功能
+
 - <input type="checkbox" > 增加文章分类目录
 - <input type="checkbox" > 增加搜索功能
 - <input type="checkbox" > 增加评论功能
