@@ -16,7 +16,7 @@ type MdxProps = {
   code: string;
 };
 
-export function MDX({ code }: MdxProps) {
+export function Mdx({ code }: MdxProps) {
   const Component = useMDXComponent(code);
   return (
     <article>
