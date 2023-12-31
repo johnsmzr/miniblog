@@ -23,6 +23,12 @@ https://github.com/leerob/leerob.io
 
 https://leerob.io/blog
 
+---
+
+https://github.com/pengtikui/pengtikui.cn
+
+https://pengtikui.cn/blog
+
 # 介绍
 
 尽量制作一个**精简**的博客，最小化是原则。
