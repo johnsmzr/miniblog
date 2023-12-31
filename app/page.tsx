@@ -2,7 +2,7 @@ import { Blog, allBlogs } from "contentlayer/generated";
 import { BlogCard } from "./components/blog-card";
 
 // 对博客文章按时间进行排序
-export function compareTime(a: Blog, b: Blog) {
+function compareTime(a: Blog, b: Blog) {
   if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
     return -1;
   }
