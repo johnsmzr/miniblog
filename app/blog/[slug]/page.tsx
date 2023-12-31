@@ -1,7 +1,7 @@
 import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { BlogCardHeader } from "@/components/BlogCard";
-import { Mdx } from "@/components/Mdx";
+import { MDX } from "@/components/MDX";
 import { Metadata } from "next";
 
 type BlogSlugProps = {
@@ -41,7 +41,7 @@ export default function BlogSlug({ params }: BlogSlugProps) {
     // 需要为黑夜模式添加 dark:prose-invert, 解决字看不清的问题
     <section className="py-6 prose prose-stone dark:prose-invert">
       <BlogCardHeader {...post} />
-      <Mdx code={post.body.code} />
+      <MDX code={post.body.code} />
     </section>
   );
 }

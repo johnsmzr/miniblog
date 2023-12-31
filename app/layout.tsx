@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
-import Topbar from "@/components/Topbar";
+import Topbar from "@/components/TopBar";
 import ThemeProvider from "@/components/ThemeProvider";
 import { Footer } from "@/components/Footer";
 
