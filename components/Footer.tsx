@@ -1,7 +1,7 @@
 export function Footer() {
   return (
-    <footer className="mt-2 px-2 py-6 items-center justify-center border-t">
-      <a className="flex items-center justify-center">
+    <footer className="mt-2 px-2 py-6 text-gray-500 border-t">
+      <a className="flex  justify-center ">
         <p>Capybara &copy; {new Date().getFullYear()}</p>
       </a>
     </footer>
