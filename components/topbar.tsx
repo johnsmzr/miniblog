@@ -3,7 +3,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { useWindowScroll } from "react-use";
-import SwitchTheme from "./Switch-theme";
+import SwitchTheme from "./SwitchTheme";
 
 const navItems = [
   { children: "Category", href: "/category" },
