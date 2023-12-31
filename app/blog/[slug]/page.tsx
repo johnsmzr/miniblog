@@ -1,7 +1,7 @@
 import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
-import { BlogCardHeader } from "@/app/components/blog-card";
-import { Mdx } from "@/app/components/mdx";
+import { BlogCardHeader } from "@/components/blog-card";
+import { Mdx } from "@/components/mdx";
 import { Metadata } from "next";
 
 type BlogSlugProps = {
