@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { useWindowScroll } from "react-use";
 import SwitchTheme from "./SwitchTheme";
+import Image from "next/image";
 
 const navItems = [
   { children: "Category", href: "/category" },
@@ -28,13 +29,15 @@ export default function TopBar() {
         )}
       >
         {/* home link */}
-        <div className="flex-none">
-          <Link
-            className={clsx(
-              "border-b-2 border-transparent hover:border-current"
-            )}
-            href="/"
-          >
+        <div className="flex ">
+          <Link href="/" className="flex">
+            <Image
+              src="/avatar.jpg"
+              alt="Capybara Blog"
+              width={64}
+              height={64}
+              className="flex rounded-full overflow-hidden "
+            />
             Home
           </Link>
         </div>
