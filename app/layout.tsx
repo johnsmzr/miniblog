@@ -4,6 +4,7 @@ import "./globals.css";
 import clsx from "clsx";
 import Topbar from "@/components/Topbar";
 import ThemeProvider from "@/components/Theme-provider";
+import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,6 +41,7 @@ export default function RootLayout({
           >
             {children}
           </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
