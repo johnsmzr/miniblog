@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
-import Topbar from "@/components/TopBar";
+import TopBar from "@/components/TopBar";
 import ThemeProvider from "@/components/ThemeProvider";
 import { Footer } from "@/components/Footer";
 
@@ -31,7 +31,7 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider>
-          <Topbar />
+          <TopBar />
           <main
             className={clsx(
               "md:max-w-4xl mt-5 m-auto pb-12 px-5 md:px-0",

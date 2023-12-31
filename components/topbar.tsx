@@ -11,7 +11,7 @@ const navItems = [
   { children: "Github", href: "https://github.com" },
 ];
 
-export default function Topbar() {
+export default function TopBar() {
   const { y } = useWindowScroll();
   return (
     <nav
