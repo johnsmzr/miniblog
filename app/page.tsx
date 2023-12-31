@@ -1,5 +1,5 @@
 import { Blog, allBlogs } from "contentlayer/generated";
-import { BlogCard } from "@/components/blog-card";
+import { BlogCard } from "@/components/Blog-card";
 
 // 对博客文章按时间进行排序
 function compareTime(a: Blog, b: Blog) {
