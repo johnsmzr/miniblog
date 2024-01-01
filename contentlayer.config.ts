@@ -1,6 +1,6 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
 import rehypePrettyCode from "rehype-pretty-code";
-import remarkGfm from "remark-gfm";
+// import remarkGfm from "remark-gfm"; //error
 
 export const Blog = defineDocumentType(() => ({
   name: "Blog",
@@ -33,6 +33,6 @@ export default makeSource({
   documentTypes: [Blog],
   mdx: {
     rehypePlugins: [[rehypePrettyCode, { theme: "github-dark" }]],
-    remarkPlugins: [remarkGfm],
+    // remarkPlugins: [remarkGfm],     //error
   },
 });

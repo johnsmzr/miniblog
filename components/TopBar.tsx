@@ -1,8 +1,6 @@
 "use client";
 
-import clsx from "clsx";
 import Link from "next/link";
-
 import SwitchTheme from "./SwitchTheme";
 import Image from "next/image";
 
@@ -54,6 +52,7 @@ export default function TopBar() {
             {navItems.title}
           </Link>
         ))}
+
         {/* change dark/light mode */}
         <SwitchTheme className={buttonUI} />
       </div>
