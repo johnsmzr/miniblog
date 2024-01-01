@@ -10,7 +10,9 @@
 - [ ] 增加登陆功能
 
 # 已有功能
-✅ 加入contentlayer，支持用markdown(mdx)写文章
+
+✅ 加入 contentlayer，支持用 markdown(mdx)写文章
+
 ✅ 增加代码高亮
 
 # 参考：
@@ -36,8 +38,6 @@ https://leerob.io/blog
 https://github.com/pengtikui/pengtikui.cn
 
 https://pengtikui.cn/blog
-
-
 
 ---
 
