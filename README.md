@@ -13,6 +13,8 @@
 
 ✅ 加入 contentlayer，支持用 markdown(mdx)写文章
 
+✅ 白天/黑夜模式
+
 ✅ 增加代码高亮
 
 # 参考：
