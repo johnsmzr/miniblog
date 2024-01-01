@@ -15,7 +15,9 @@ export default function Home() {
       {allBlogs
         .sort((a, b) => compareTime(a, b))
         .map((item) => (
+          <div className="hover:scale-[0.99] transform duration-300">
           <BlogCard key={item._id} {...item} />
+          </div>
         ))}
     </section>
   );
