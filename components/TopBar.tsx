@@ -7,9 +7,20 @@ import SwitchTheme from "./SwitchTheme";
 import Image from "next/image";
 
 const navItems = [
-  { title: "Category", href: "/category" },
-  { title: "About", href: "/about" },
-  { title: "Github", href: "https://github.com" },
+  {
+    title: "Category",
+    href: "/category",
+  },
+  {
+    title: "About",
+    href: "/about",
+  },
+  {
+    title: "Github",
+    href: "https://github.com",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
 ];
 
 export default function TopBar() {
@@ -17,7 +28,10 @@ export default function TopBar() {
   return (
     <nav className="flex items-center justify-between py-6 px-2 text-2xl ">
       {/* home */}
-      <Link href="/" className="flex items-center hover:scale-110 transform duration-300">
+      <Link
+        href="/"
+        className="flex items-center hover:scale-110 transform duration-300"
+      >
         <Image
           src="/avatar.jpg"
           alt="Capybara Blog"
@@ -25,21 +39,21 @@ export default function TopBar() {
           height={80}
           className=" rounded-full overflow-hidden mr-2 hover:opacity-80"
         />
-        <span >Home</span>
+        <span>Home</span>
       </Link>
 
       {/* nav items link */}
       <div className="flex-1 max-w-xl md:flex justify-end hidden">
         {navItems.map((navItems) => (
           <Link
-            key={navItems.href}
+            key={navItems.title}
             className="mr-10 hover:scale-110 transform duration-300 "
             {...navItems}
           >
             {navItems.title}
           </Link>
         ))}
-        {/* change light/dark theme */}
+        {/* change dark/light mode */}
         <SwitchTheme />
       </div>
     </nav>
