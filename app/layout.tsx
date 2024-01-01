@@ -34,7 +34,7 @@ export default function RootLayout({
           
           <main
             className={clsx(
-              "md:max-w-4xl mt-5 m-auto px-5 md:px-0",
+              "md:max-w-4xl  m-auto px-5 md:px-0",
               "min-h-[calc(100%-4rem)]",
               "box-border",
             )}
