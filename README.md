@@ -1,9 +1,14 @@
+# 介绍
+
+尽量制作一个**精简**的博客，最小化是原则。
+
 # To Do 规划
 
 - [ ] 增加文章分类目录
 - [ ] 增加搜索功能
 - [ ] 增加评论功能
 - [ ] 增加登陆功能
+- [x] 增加代码高亮
 
 # 参考：
 
@@ -29,9 +34,9 @@ https://github.com/pengtikui/pengtikui.cn
 
 https://pengtikui.cn/blog
 
-# 介绍
 
-尽量制作一个**精简**的博客，最小化是原则。
+
+---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
