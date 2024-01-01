@@ -29,16 +29,16 @@ export default function TopBar() {
         )}
       >
         {/* home link */}
-        <div className="flex ">
-          <Link href="/" className="flex">
+        <div>
+          <Link href="/" className="flex items-center">
             <Image
               src="/avatar.jpg"
               alt="Capybara Blog"
               width={64}
               height={64}
-              className="flex rounded-full overflow-hidden "
+              className=" rounded-full overflow-hidden mr-2"
             />
-            Home
+            <span>Home</span>
           </Link>
         </div>
 
