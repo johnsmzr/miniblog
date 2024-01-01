@@ -13,6 +13,7 @@ export default function SwitchTheme() {
         alt="switch Theme"
         width={23}
         height={23}
+        className="hover:scale-110  transform duration-300"
       />
     </button>
   );
