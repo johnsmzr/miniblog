@@ -26,8 +26,8 @@ export default function AboutPage() {
       <section className="my-8">
         <h2 className="text-3xl font-semibold mb-4">Get In Touch</h2>
         <p className="text-lg text-gray-700">
-          Have any questions or feedback? Feel free to reach out to us. We're
-          always here to help!
+          {`Have any questions or feedback? Feel free to reach out to us. We're
+          always here to help!`}
         </p>
       </section>
     </article>
