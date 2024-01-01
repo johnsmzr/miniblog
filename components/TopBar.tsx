@@ -37,7 +37,7 @@ export default function TopBar() {
           alt="Capybara Blog"
           width={80}
           height={80}
-          className=" rounded-full overflow-hidden mr-2 hover:opacity-80"
+          className=" rounded-full overflow-hidden mr-2 hover:opacity-90"
         />
         <span>Home</span>
       </Link>
