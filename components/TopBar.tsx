@@ -26,7 +26,7 @@ const navItems = [
 export default function TopBar() {
   const { y } = useWindowScroll();
   return (
-    <nav className="flex items-center justify-between py-6 px-2 text-2xl ">
+    <nav className="flex items-center justify-between py-6 px-2 text-2xl">
       {/* home */}
       <Link
         href="/"
@@ -39,7 +39,7 @@ export default function TopBar() {
           height={80}
           className=" rounded-full overflow-hidden mr-2 hover:opacity-90"
         />
-        <span>Home</span>
+        <span className="mr-10 px-4 py-2 hover:scale-110 hover:bg-gray-200 rounded-md transform duration-300">Home</span>
       </Link>
 
       {/* nav items link */}
@@ -47,14 +47,14 @@ export default function TopBar() {
         {navItems.map((navItems) => (
           <Link
             key={navItems.title}
-            className="mr-10 hover:scale-110 transform duration-300 "
+            className="mr-10 px-4 py-2 hover:scale-110 hover:bg-gray-200 rounded-md transform duration-300"
             {...navItems}
           >
             {navItems.title}
           </Link>
         ))}
         {/* change dark/light mode */}
-        <SwitchTheme />
+        <SwitchTheme className="mr-10 px-4 py-2 hover:scale-110 hover:bg-gray-200 rounded-md transform duration-300"/>
       </div>
     </nav>
   );

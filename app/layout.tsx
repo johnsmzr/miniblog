@@ -31,19 +31,17 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider>
-          
           <main
             className={clsx(
               "md:max-w-4xl  m-auto px-5 md:px-0",
               "min-h-[calc(100%-4rem)]",
-              "box-border",
+              "box-border"
             )}
           >
             <TopBar />
             {children}
             <Footer />
           </main>
-          
         </ThemeProvider>
       </body>
     </html>
