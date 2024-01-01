@@ -15,7 +15,7 @@ const navItems = [
 export default function TopBar() {
   const { y } = useWindowScroll();
   return (
-    <nav className="flex items-center justify-between py-6 px-2 ">
+    <nav className="flex items-center justify-between py-6 px-2 text-2xl">
       {/* home link */}
 
       <Link href="/" className="flex items-center">
