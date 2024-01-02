@@ -40,7 +40,7 @@ export default function TopBar() {
           alt="Capybara Blog"
           width={80}
           height={80}
-          className=" rounded-full overflow-hidden mr-2 hover:opacity-90"
+          className="rounded-full overflow-hidden mr-2 hover:opacity-90"
         />
         <span className={buttonUI}>Home</span>
       </Link>

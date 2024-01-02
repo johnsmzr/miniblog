@@ -39,7 +39,7 @@ export default function BlogSlug({ params }: BlogSlugProps) {
 
   return (
     // 需要为黑夜模式添加 dark:prose-invert, 解决字看不清的问题
-    <section className="py-6 prose prose-stone dark:prose-invert">
+    <section className="prose prose-stone dark:prose-invert">
       <BlogCardHeader {...post} />
       <Mdx code={post.body.code} />
     </section>
