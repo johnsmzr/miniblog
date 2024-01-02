@@ -23,21 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh-CN" className="scroll-smooth">
-      <body
-        className={clsx(
-          "antialiased m-auto box-border dark:text-white/90 transition-colors duration-300",
-          inter.className
-        )}
-      >
+    <html lang="zh-CN" className={inter.className}>
+      <body className="antialiased max-w-3xl m-auto px-2 min-h-[calc(100%-4rem)] border-box">
         <ThemeProvider>
-          <main
-            className={clsx(
-              "md:max-w-4xl  m-auto px-5 md:px-0",
-              "min-h-[calc(100%-4rem)]",
-              "box-border"
-            )}
-          >
+          <main>
             <TopBar />
             {children}
             <Footer />

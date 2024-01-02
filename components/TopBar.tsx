@@ -23,13 +23,13 @@ const navItems = [
 
 export default function TopBar() {
   const buttonUI =
-    "mr-10 px-4 py-2 \
+    "mr-3 px-2 py-2 \
     rounded-md transform duration-300 \
     hover:scale-110 hover:bg-gray-200 \
     dark:hover:bg-gray-700 hover:bg-gray-200";
 
   return (
-    <nav className="flex items-center justify-between py-6 px-2 text-2xl">
+    <nav className="flex items-center justify-between py-6 px-2 pb-10 text-2xl">
       {/* home */}
       <Link
         href="/"
