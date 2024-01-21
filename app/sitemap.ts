@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const allPost = [...allBlogs]
     .sort((a, b) => compareTime(a, b))
     .map((item) => ({
-      url: `https://https://miniblog-lake.vercel.app/${item.url}`,
+      url: `https://miniblog-lake.vercel.app/${item.slug}`,
       lastModified: new Date(item.publishedAt),
     }));
 
