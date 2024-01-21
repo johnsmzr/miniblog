@@ -8,10 +8,12 @@
 - [ ] 增加搜索功能
 - [ ] 增加评论功能
 - [ ] 增加登陆功能
-- [ ] 增加sitemap功能，优化SEO
-- [ ] 增加robots.txt，优化SEO
 
 # 已有功能
+
+✅ 增加自动生成站点地图 sitemap.xml 优化SEO
+
+✅ 增加自动生成 robots.txt 优化SEO
 
 ✅ 加入 contentlayer，支持用 markdown(mdx)写文章
 
