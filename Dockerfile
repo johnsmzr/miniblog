@@ -1,5 +1,5 @@
-# Use the official Node.js 16 image as the base image
-FROM node:22-alpine
+# # Use the official Node.js 16 image as the base image
+FROM node:18-alpine
 
 # Create and change to the app directory
 WORKDIR /usr/src/app
@@ -22,3 +22,4 @@ EXPOSE 3000
 
 # Start the Next.js application
 CMD ["npm", "run", "start"]
+
