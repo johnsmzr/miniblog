@@ -76,10 +76,9 @@ docker buildx build --platform linux/amd64,linux/arm64 \
 
 docker buildx build --platform linux/amd64,linux/arm64 -t johnzr/miniblog:v0.1.1 -t johnzr/miniblog:latest --push .
 
-
 docker push johnzr/miniblog:v0.1.0
 
-docker run -d -p 3000:3000 johnzr/miniblog:v0.1.0
+docker run -d -p 3000:3000 johnzr/miniblog:latest
 
 ```
 
