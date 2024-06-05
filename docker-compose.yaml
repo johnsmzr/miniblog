@@ -1,0 +1,7 @@
+services:
+  miniblog:
+    image: johnzr/miniblog:latest
+    ports:
+      - "3000:3000"
+    restart: always
+    

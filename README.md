@@ -51,6 +51,43 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started 如何使用
 
+```sh
+# 开发模式
+npm run dev
+
+# 构建
+npm run build
+
+# 启动
+npm run start
+
+```
+
+## 构建 docker 镜像
+
+```sh
+# docker build -t johnzr/miniblog:v0.1.0 .
+
+# 构建多架构镜像
+docker buildx build --platform linux/amd64,linux/arm64 \
+    -t johnzr/miniblog:v0.1.1 \
+    -t johnzr/miniblog:latest \
+    --push .
+
+
+docker push johnzr/miniblog:v0.1.0
+
+docker run -d -p 3000:3000 johnzr/miniblog:v0.1.0
+
+```
+
+
+
+
+
+
+# 官方文档
+
 First, run the development server:
 
 ```bash
