@@ -65,16 +65,23 @@ npm run start
 
 ## 构建 docker 镜像
 
+- https://medium.com/@itsuki.enjoy/dockerize-a-next-js-app-4b03021e084d
+
 ```sh
 # docker build -t johnzr/miniblog:v0.1.0 .
 
 # 构建多架构镜像
 docker buildx build --platform linux/amd64,linux/arm64 \
-    -t johnzr/miniblog:v0.1.1 \
-    -t johnzr/miniblog:latest \
-    --push .
+-t johnzr/miniblog:v0.1.4 \
+-t johnzr/miniblog:latest \
+--push .
 
 docker buildx build --platform linux/amd64,linux/arm64 -t johnzr/miniblog:v0.1.1 -t johnzr/miniblog:latest --push .
+
+# x86, local
+docker buildx build --platform linux/amd64 -t johnzr/miniblog:v0.1.2 --load .
+
+docker buildx build https://github.com/dockersamples/buildme.git --builder cloud-johnzr-cloudbuilder
 
 docker push johnzr/miniblog:v0.1.0
 
